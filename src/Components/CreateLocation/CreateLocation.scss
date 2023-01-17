@@ -1,0 +1,295 @@
+.CreateLocation {
+  .ant-modal-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #1e212a !important;
+  }
+
+  .ant-modal-body {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .ant-input {
+    padding: 10px 16px;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      color: #afb6c6;
+    }
+  }
+
+  .hidden-form-item {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    margin-bottom: 0;
+  }
+
+  .Leave_Quota,
+  .Time_Zone,
+  .Year_Start {
+    display: flex;
+
+    > .ant-space-item:first-child {
+      flex: 1 1 auto;
+    }
+  }
+
+  .ant-select-selector {
+    height: 40px !important;
+    border-radius: 4px !important;
+
+    .ant-select-selection-item {
+      line-height: 40px;
+    }
+  }
+
+  .ant-form-item-label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1f2129 !important;
+
+    label {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: #1f2129 !important;
+    }
+  }
+
+  .colorRed {
+    color: #f24445;
+  }
+
+  ant-checkbox-checked {
+    & + .ant-checkbox-inner {
+      background: #eef7fc;
+      border: 1px solid #00a0ec;
+      border-radius: 3px;
+    }
+  }
+
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background: #eef7fc;
+      border: 1px solid #00a0ec;
+      border-radius: 3px;
+      &::after {
+        border-color: #00a0ec;
+      }
+    }
+  }
+
+  .Workweek_item {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > div:first-child {
+      flex: 0 0 125px;
+    }
+
+    > div:last-child {
+      .ant-checkbox-group {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-right: -40px;
+
+        label {
+          flex: 0 0 33.33%;
+          margin-right: 0;
+
+          span {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .Leave_Quota,
+  .Time_Zone,
+  .Year_Start {
+    .ant-row {
+      position: relative;
+    }
+
+    .ant-form-item-label {
+      padding-bottom: 0;
+      position: absolute;
+      top: -10px;
+      left: 4px;
+      background-color: #fff;
+      padding: 0 6px;
+      z-index: 1;
+
+      label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+
+        color: #1e212a;
+      }
+    }
+
+    .ant-space-item:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .Add_User,
+  .Week_Starts_On {
+    position: relative;
+
+    .ant-form-item-label {
+      padding-bottom: 0;
+      position: absolute;
+      top: -10px;
+      left: 4px;
+      background-color: #fff;
+      padding: 0 6px;
+      z-index: 1;
+
+      label {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+
+        color: #1e212a;
+      }
+    }
+  }
+
+  .Add_User {
+    margin-bottom: 24px;
+
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    .ant-select-selection-placeholder {
+      line-height: 40px;
+    }
+
+    .ant-select-selection-item {
+      background: #eef7fc;
+      border-radius: 4px;
+      line-height: initial;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      text-align: center;
+      color: #00a0ec;
+    }
+
+    .ant-select-selection-item-remove {
+      display: flex;
+      align-items: center;
+      color: #00a0ec;
+    }
+
+    .Add_User_warning {
+      display: flex;
+      margin-top: 8px;
+
+      svg {
+        flex: 0 0 auto;
+        margin-right: 8px;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #868c98;
+        mix-blend-mode: normal;
+      }
+    }
+  }
+
+  .Year_Start {
+    .ant-space-item:first-child {
+      flex: 0 1 125px;
+    }
+
+    .ant-space-item:last-child {
+      margin-bottom: 0;
+      flex-basis: 80px;
+    }
+  }
+
+  .Expiry_Date,
+  .Location_Default {
+    display: flex;
+    .ant-space-item:last-child {
+      margin-bottom: 20px;
+    }
+
+    .ant-checkbox {
+      + span {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #1e212a;
+      }
+    }
+  }
+
+  .Week_Starts_On {
+    display: flex;
+    .ant-space-item:first-child {
+      flex: 0 1 145px;
+    }
+  }
+
+  .info {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #1e212a;
+    background: #eef7fc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    border: 1px solid #00a0ec;
+  }
+
+  .ant-modal-footer {
+    border-top: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+
+    .ant-btn {
+      border-radius: 6px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: -0.1px;
+      color: #ffffff;
+      padding: 12px 24px;
+      height: auto;
+
+      &.ant-btn-default {
+        background-color: #afb6c6;
+      }
+    }
+  }
+}

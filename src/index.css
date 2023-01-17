@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.dashboard {
+  display: flex;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.dash-container {
+  padding: 24px 40px;
+  flex: 1 1 auto;
+}
+
+.dash-content {
+  height: 768px;
+}
+
+/* Крошки */
+.breadcrumbs {
+  margin-bottom: 8px;
+}
+
+.breadcrumbs__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  padding-right: 24px;
+  position: relative;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.1px;
+}
+
+.breadcrumbs__item::before,
+.breadcrumbs__item::after {
+  display: block;
+  content: "";
+  width: 6px;
+  height: 0px;
+  background: #979797;
+  position: absolute;
+  right: 8px;
+  border: 0.75px solid #979797;
+  border-radius: 1px;
+}
+
+.breadcrumbs__item::before {
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.breadcrumbs__item::after {
+  transform: rotate(-45deg);
+  bottom: 6px;
+}
+
+.breadcrumbs__item:last-child {
+  padding-right: 0;
+}
+
+.breadcrumbs__item:last-child::before,
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link_iconic {
+  display: flex;
+  align-items: flex-start;
+}
+.breadcrumbs__link_iconic img,
+.breadcrumbs__link_iconic svg {
+  margin-right: 4px;
+}
+
+/* Главный заголовок */
+.dash-content__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.dash-content__header__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #1e212a;
+  margin-bottom: 6px;
+}
+
+.dash-content__header__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.dash-content__header__button {
+  margin-top: 6px;
+}

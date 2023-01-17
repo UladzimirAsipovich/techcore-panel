@@ -1,0 +1,82 @@
+.button {
+  border-radius: 6px;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 250ms ease;
+
+  &_circle {
+    border-radius: 50%;
+  }
+
+  &_base {
+    &:disabled {
+      background: #afb6c672;
+    }
+  }
+
+  &_primary {
+    background: #00a0ec;
+
+    &:hover {
+      background: #0683dd;
+    }
+
+    &:disabled {
+      background: linear-gradient(0deg, rgba(0, 160, 236, 0.7), rgba(0, 160, 236, 0.7)), #ffffff;
+    }
+  }
+
+  &_secondary {
+    background: #afb6c6;
+
+    &:hover {
+      background: #868c98b2;
+    }
+
+    &:disabled {
+      background: #afb6c699;
+    }
+  }
+
+  &_danger {
+    color: #f24445;
+    background: #fff;
+    border: 1px solid #f24445;
+
+    &:hover {
+      color: #fff;
+      background: #f24445;
+      border: 1px solid #f24445;
+    }
+
+    :disabled {
+      color: #fff;
+      background: hsl(0, 87%, 81%);
+      border: 1px solid hsl(360, 87%, 81%);
+    }
+  }
+
+  &_danger-reverse {
+    color: #fff;
+    background: #f24445;
+    border: 1px solid #f24445;
+
+    &:hover {
+      color: #f24445;
+      background: #fff;
+      border: 1px solid #f24445;
+    }
+
+    :disabled {
+      color: #fff;
+      background: hsl(0, 87%, 81%);
+      border: 1px solid hsl(360, 87%, 81%);
+    }
+  }
+}
